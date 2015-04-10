@@ -1,0 +1,104 @@
+.vid {
+	background-color: #B0FFB0;
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 10px;
+	padding: 0px;
+	height: 100%;
+	width: 400px;
+	border: 1px solid #000;
+}
+.ind {
+	background-color: #B0FFB0;
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 0px;
+	height: 100%;
+	width: 505px;
+	border: 1px solid #000;
+}
+table {
+	margin: 5px;
+	font-size: 14px;
+}
+.rows {
+	display: inline-table;
+	margin: 5px;
+}
+.right {
+	display: inline-table;
+	margin: 5px;
+	float: right;
+	text-align: right;
+
+}
+.week {
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid #000;
+}
+.red {
+	color: #F30;
+}
+.green {
+	color: #060;
+}
+td {
+	text-align: left;
+}
+#center {
+	text-align: center;
+}
+
+#right {
+	text-align: right;
+}
+.chr td{
+	color: #808080;
+	font-size: 12px;
+}
+#front_table{
+	border-radius:10px;
+	/*background:#bffbc6;*/
+	padding:10px;
+}
+.add-table {
+
+}
+.add-table td {
+	padding: 5px 0;
+}
+.add-table input,
+.add-table select
+.add-table textarea {
+	width: 220px;
+}
+header, footer {
+	margin: 5px auto;
+}
+footer {
+	margin-bottom: 50px;
+}
+header .navigation,
+footer .navigation {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+footer .navigation li,
+header .navigation li {
+	display: inline-block;
+	list-style: none;
+}
+#header-name {
+	text-align: center;
+}
+
+@media only screen and (min-width:900px){
+	header, footer, #front_table, table {
+		width:900px;
+	}
+}
+@media only screen and (max-width:900px){
+	header, footer, #front_table, table {
+		width:100%;
+	}
+}
