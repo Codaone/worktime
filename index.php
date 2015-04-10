@@ -21,7 +21,7 @@ if($user->isLoggedIn()){
 }
 
 $onlyAdmin = array("stats.php", "others.php", "users.php", "summary.php", "excel.php");
-if(!file_exists($file) || ($user->getUsername() != "admin" && in_array($file, $onlyAdmin)) || strpos($file, "/")!==false){
+if(!file_exists($file) || ($user->getUsername() != "admin" && in_array($file, $onlyAdmin)) || strpos($file, "/") != false){
 	header('HTTP/1.0 404 Not Found');
     echo "<h1>404 Not Found</h1>";
     echo "The page that you have requested could not be found.";

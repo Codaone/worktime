@@ -31,7 +31,7 @@ CREATE TABLE `users` (
   `last_login` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `active` tinyint(3) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for work
@@ -48,7 +48,7 @@ CREATE TABLE `work` (
   `price` decimal(10,2) DEFAULT NULL,
   `starttime` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=741 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for work_payments
@@ -59,4 +59,6 @@ CREATE TABLE `work_payments` (
   `user_id` int(10) NOT NULL,
   `amount` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+INSERT INTO `users` VALUES ('1', 'admin', 'a39880be61aeed7d19da94912f546e8632967d30', 'Admin user', 'The admin user for all.', '0', '', NOW(), '', '1');
