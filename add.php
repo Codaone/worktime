@@ -143,7 +143,7 @@ if(getvar('ok')) {
 							?>
 						</select>
 						<?php if($user->getUsername() == "admin") { ?>
-							<input class="form-control" name="name" placeholder="Customer" value="<?= (getvar('name') ? getvar('name') : "") ?>" />
+							<input class="form-control" name="name" placeholder="Customer" value="<?php echo  (getvar('name') ? getvar('name') : "") ?>" />
 						<?php } else {
 							$p = getvar('price') ? number_format(getvar('price'), 1, ",", " ") : "0,0";
 							echo '<input type="hidden" name="name" value="' . getvar('name', false, "") . '" />';
@@ -167,14 +167,14 @@ if(getvar('ok')) {
 				<tr>
 					<td style="text-align:right;" valign="top">Description:</td>
 					<td colspan="2">
-						<textarea placeholder="Description" class="form-control" rows="5" name="description"><?= (getvar('description') ? getvar('description') : "") ?></textarea>
+						<textarea placeholder="Description" class="form-control" rows="5" name="description"><?php echo  (getvar('description') ? getvar('description') : "") ?></textarea>
 					</td>
 				</tr>
 				<?php if($user->getUsername() == "admin") { ?>
 				<tr>
 					<td style="text-align:right;" >Charged:</td>
 					<td colspan="2">
-						<input type=checkbox name="charged" <?= (getvar('charged') ? 'checked="checked"' : "") ?>>
+						<input type=checkbox name="charged" <?php echo  (getvar('charged') ? 'checked="checked"' : "") ?>>
 					</td>
 				</tr>
 				<?php } ?>

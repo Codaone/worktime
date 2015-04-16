@@ -3,8 +3,8 @@
 <head>
 <meta name="viewport" content="min-width=900px, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?=$title?></title>
-<?=$header?>
+<title><?php echo $title?></title>
+<?php echo $header?>
 </head>
 <header>
 	<h2 id="header-name">

@@ -18,9 +18,9 @@ $days	= array();
 <form action='index.php?id=' method='get'>
 <?php if($user->isLoggedIn()){ ?>
 <div style="width:900px;">
-	<a style="float:left;font-size:18px;" href="?page=<?=(getvar("page")===FALSE || getvar("page") <= 0 ? 1 : getvar("page")-1)?>">«</a>
+	<a style="float:left;font-size:18px;" href="?page=<?php echo (getvar("page")===FALSE || getvar("page") <= 0 ? 1 : getvar("page")-1)?>">«</a>
 	<a style="margin:0 auto;font-size:18px;text-decoration:none;" href="?showall=1">==</a>
-	<a style="float:right;font-size:18px;" href=?page=<?=(getvar("page")===FALSE ? 2 : getvar("page")+1)?>>»</a>
+	<a style="float:right;font-size:18px;" href=?page=<?php echo (getvar("page")===FALSE ? 2 : getvar("page")+1)?>>»</a>
 </div>
 <table id="front_table" class="table table-striped table-condensed table-hover" cellspacing="0">
 	<thead>
@@ -37,7 +37,7 @@ $days	= array();
 	<th><b>Price</b></th>
 	<th><b>Total</b></th>
 	<?php } ?>
-	<th><?=getvar("showonly") ? "<a href='?showonly=".getvar("showonly")."&charged=1'>Show charged also</a>" : ""?></th>
+	<th><?php echo getvar("showonly") ? "<a href='?showonly=".getvar("showonly")."&charged=1'>Show charged also</a>" : ""?></th>
 </tr>
 </thead>
 	<tbody>

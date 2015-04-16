@@ -1,4 +1,4 @@
-<?
+<?php
 class User {
 	// Config values
 	public $userTable = "users";
